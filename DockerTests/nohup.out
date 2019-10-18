@@ -1,0 +1,144 @@
+Attempting to open Picoscope 3000...
+Sampling interval = 2575683584.000000 ns
+Taking  samples = 4096
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10661.06683254242 seconds ---
+4096
+4096
+4096
+Attempting to open Picoscope 3000...
+Sampling interval = 2612304640.000000 ns
+Taking  samples = 4096
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10812.561607599258 seconds ---
+4096
+4096
+4096
+Attempting to open Picoscope 3000...
+Sampling interval = 2636718848.000000 ns
+Taking  samples = 4096
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10911.071895122528 seconds ---
+4096
+4096
+4096
+Attempting to open Picoscope 3000...
+Sampling interval = 6420898304.000001 ns
+Taking  samples = 4096
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 26576.46533513069 seconds ---
+4096
+4096
+4096
+Attempting to open Picoscope 3000...
+Sampling interval = 100000000.000000 ns
+Taking  samples = 105500
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10555.005678892136 seconds ---
+105500
+105500
+105500
+Attempting to open Picoscope 3000...
+Sampling interval = 100000000.000000 ns
+Taking  samples = 107000
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10703.829644918442 seconds ---
+107000
+107000
+107000
+Attempting to open Picoscope 3000...
+Sampling interval = 100000000.000000 ns
+Taking  samples = 108000
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10804.570046901703 seconds ---
+108000
+108000
+108000
+Attempting to open Picoscope 3000...
+Sampling interval = 100000000.000000 ns
+Taking  samples = 263000
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 26303.957958698273 seconds ---
+263000
+263000
+263000
+Attempting to open Picoscope 3000...
+Sampling interval = 100000000.000000 ns
+Taking  samples = 105500
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10554.997074365616 seconds ---
+105500
+105500
+105500
+Attempting to open Picoscope 3000...
+Sampling interval = 100000000.000000 ns
+Taking  samples = 107000
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10703.77577137947 seconds ---
+107000
+107000
+107000
+Attempting to open Picoscope 3000...
+Sampling interval = 100000000.000000 ns
+Taking  samples = 108000
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 10804.575540542603 seconds ---
+108000
+108000
+108000
+Attempting to open Picoscope 3000...
+Sampling interval = 100000000.000000 ns
+Taking  samples = 263000
+Maximum samples = 16777152
+Chosen channel range = 20
+Chosen channel range = 0
+Done waiting for trigger
+<class 'numpy.ndarray'>
+--- 26303.958768606186 seconds ---
+263000
+263000
+263000
