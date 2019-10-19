@@ -1,0 +1,103 @@
+clear all
+% close all
+clc
+% 
+% pi="PI3B";
+% % type=("baremetal");
+% type=("docker");
+% test=("0K");
+% cpuMat = zeros(4,10);
+% timMat = zeros(4,10);
+% % [data0k,legendData] = getPiData4(10,5,test,type,pi);
+% % time0k = getPiDataTime(10,5,test,type,pi);
+% [data0k,legendData] = getPiDataDocker(10,5,test,type,pi);
+% time0k = getPiDataTimeDocker(10,5,test,type,pi);
+% 
+% for jidx = 1:10
+%     dataTest{jidx} = getTest(jidx+1,data0k,type);
+% end
+% 
+% for jidx = 1:10
+%     timeTest{jidx} = getTest(jidx+1,time0k,type);
+% end
+% [allCpuPointsFinal,maxTime,totMeanCpu] = plotCpuNginxAverage(dataTest,timeTest,test,type);
+
+
+
+pi=["PI3B+"];
+    type=("docker");
+    test=(["0K","1K","10K","100K"]);
+%     test=(["0K"]);
+figure('units','normalized','outerposition',[0 0 1 1]);    
+for pidx = 1:length(pi)
+
+    % figure(1);
+    % hold on;
+    % figure(2);
+    % hold on;
+    cpuMat = zeros(4,10);
+    timMat = zeros(4,10);
+    for idx = 1:length(test)
+    %     mkdir(type+"/"+test)
+
+        [data0k,legendData] = getPiDataDocker(10,5,test(idx),type,pi(pidx));
+        time0k = getPiDataTimeDocker(10,5,test(idx),type,pi(pidx));
+
+        for jidx = 1:10
+            dataTest{jidx} = getTest(jidx+1,data0k,type);
+        end
+
+        for jidx = 1:10
+            timeTest{jidx} = getTest(jidx+1,time0k,type);
+        end
+        [allCpuPointsFinal,maxTime,totMeanCpu] = plotCpuNginxAverage(dataTest,timeTest,test(idx),type);
+        maxTime=cell2mat(maxTime);
+        for idx2 = 1:10
+            ((totMeanCpu{idx2}));
+            A = totMeanCpu{idx2};
+            B = rmmissing(A);
+            AvCpu(idx2) = sum(B)/((length(B)));
+            index(idx2) = idx;
+        end
+        cpuMat(idx,:)= AvCpu;
+        timMat(idx,:)= maxTime;
+    %     averageTests(dataTest,timeTest,test(idx),type,idx)
+    end
+
+
+    
+%     subplot(1,2,pidx)
+    bar3(cpuMat)
+    xlabel('number of pis running the test.')
+    yticks([1 2 3 4])
+    yticklabels({'0k','1k','10k','100k'})
+    ylabel('datafile')
+    zlabel('average cpu usage')
+    %view([60 30])
+%     zlim([5 25])
+    title(pi(pidx)+' '+type)
+
+
+%%     subplot(2,2,pidx+2)
+
+
+%     subplot(1,2,pidx)
+%     bar3(timMat')
+%     xlabel('data file')
+%     xticks([1 2 3 4])
+%     xticklabels({'0k','1k','10k','100k'})
+%     ylabel('number of pis running the test.')
+%     zlabel('time taken for AB test')
+%     title(pi(pidx)+' '+type)
+%     zlim([0 1000])
+%  title(pi(pidx)+' '+type)
+end
+saveas(gcf,"3dTimCpu.png")
+%zlim([8 25])
+
+
+
+
+
+
+

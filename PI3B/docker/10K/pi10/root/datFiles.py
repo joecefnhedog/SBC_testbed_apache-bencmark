@@ -1,0 +1,30 @@
+import os
+import time
+def add_data_files():
+     os.system("apk update")
+     time.sleep(15)
+     os.system("apk add --update coreutils")#needed to use the date command
+     time.sleep(25)
+     os.system("apk add procps")#needed to monitor top time
+     time.sleep(25)
+     #os.system("apk add emacs")
+     os.system("apk add python")
+     time.sleep(60)
+     os.system("dd if=/dev/zero of=0K.dat count=1 bs=1")
+     time.sleep(2)
+     os.system("dd if=/dev/zero of=1K.dat count=1024 bs=1")
+     time.sleep(4)
+     os.system("dd if=/dev/zero of=10K.dat count=1024 bs=10")
+     time.sleep(12)
+     os.system("dd if=/dev/zero of=100K.dat count=1024 bs=100")
+     time.sleep(24)
+     os.system("docker build -t simple-nginx .")
+     time.sleep(20)
+     os.system("docker build -t simple-nginx .")
+     time.sleep(20)
+     os.system("docker build -t simple-nginx .")
+     time.sleep(20)
+     os.system("docker run --rm -it -p 80:80 -d simple-nginx")
+     time.sleep(5)
+     print("wedi gorfen- docker container should be running in the background")
+add_data_files()
